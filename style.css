@@ -1,8 +1,113 @@
-/* Add smooth scrolling */
-html {
-    scroll-behavior: smooth;
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+header .logo {
+    height: 50px;
+}
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+header nav ul li {
+    margin-left: 20px;
+}
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #fff;
+    padding: 50px;
+}
+.hero-content {
+    max-width: 600px;
+}
+.hero-content h1 {
+    font-size: 3rem;
+}
+.hero-content span {
+    color: #007BFF;
+}
+.hero-content .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.hero-image img {
+    max-width: 250px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.hero-banner {
+    text-align: center;
+    background: url('your-banner-image.jpg') no-repeat center/cover;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Section */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+.about p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Projects */
+.projects .project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.project-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    background: #fff;
+    transition: transform 0.3s;
+}
+.project-card:hover {
+    transform: translateY(-5px);
+}
+.project-card h3 {
+    margin-top: 0;
+}
 .collapsible {
     cursor: pointer;
     font-size: 1.2em;
@@ -21,9 +126,27 @@ html {
     background-color: #f9f9f9;
 }
 
-.hero-banner {
-    background: url('your-banner-image.jpg') no-repeat center/cover;
-    padding: 30px;
+/* Contact */
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.contact-list li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+.contact-list img.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
     text-align: center;
-    color: white;
 }
