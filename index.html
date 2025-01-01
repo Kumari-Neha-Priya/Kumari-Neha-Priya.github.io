@@ -86,23 +86,57 @@
     </section>
 
     <!-- Skills Section -->
-    <section class="skills" id="skills">
-        <h2>Skills and Tools</h2>
-        <div class="skills-chart">
-            <div class="skill">
-                <label>HTML</label>
-                <div class="bar" style="width: 90%;"></div>
-            </div>
-            <div class="skill">
-                <label>CSS</label>
-                <div class="bar" style="width: 85%;"></div>
-            </div>
-            <div class="skill">
-                <label>JavaScript</label>
-                <div class="bar" style="width: 80%;"></div>
+<section class="skills" id="skills">
+    <h2>Skills and Tools</h2>
+    <div class="skills-container">
+        <div class="skill-bar">
+            <h3>HTML</h3>
+            <div class="progress-bar-container">
+                <div class="progress-bar" data-progress="90"></div>
             </div>
         </div>
-    </section>
+        <div class="skill-bar">
+            <h3>CSS</h3>
+            <div class="progress-bar-container">
+                <div class="progress-bar" data-progress="85"></div>
+            </div>
+        </div>
+        <div class="skill-bar">
+            <h3>JavaScript</h3>
+            <div class="progress-bar-container">
+                <div class="progress-bar" data-progress="80"></div>
+            </div>
+        </div>
+        <div class="skill-bar">
+            <h3>React</h3>
+            <div class="progress-bar-container">
+                <div class="progress-bar" data-progress="75"></div>
+            </div>
+        </div>
+        <div class="skill-bar">
+            <h3>Node.js</h3>
+            <div class="progress-bar-container">
+                <div class="progress-bar" data-progress="70"></div>
+            </div>
+        </div>
+        <div class="skill-bar">
+            <h3>Git</h3>
+            <div class="progress-bar-container">
+                <div class="progress-bar" data-progress="85"></div>
+            </div>
+        </div>
+        <!-- Circular Charts -->
+        <div class="skill-chart-container">
+            <h3>Skills Visualization</h3>
+            <div class="chart-container">
+                <canvas id="htmlChart" width="100" height="100"></canvas>
+                <canvas id="cssChart" width="100" height="100"></canvas>
+                <canvas id="jsChart" width="100" height="100"></canvas>
+            </div>
+        </div>
+    </div>
+</section>
+
 
     <!-- Blog Section -->
     <section class="blog" id="blog">
