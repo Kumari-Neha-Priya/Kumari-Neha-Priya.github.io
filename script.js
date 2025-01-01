@@ -1,7 +1,11 @@
-// Collapsible Sections
-document.querySelectorAll('.collapsible-button').forEach(button => {
-    button.addEventListener('click', () => {
-        const content = button.nextElementSibling;
-        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+document.querySelectorAll('details').forEach(detail => {
+    detail.addEventListener('toggle', () => {
+        if (detail.open) {
+            document.querySelectorAll('details').forEach(item => {
+                if (item !== detail) {
+                    item.removeAttribute('open');
+                }
+            });
+        }
     });
 });

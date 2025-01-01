@@ -1,58 +1,120 @@
-/* Smooth Scrolling */
-html {
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
     scroll-behavior: smooth;
 }
 
-/* Collapsible Sections */
-.collapsible {
-    margin: 20px 0;
-}
-.collapsible-button {
-    width: 100%;
-    background: #007BFF;
+/* Header */
+header {
+    background: #333;
     color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: left;
+    padding: 10px 0;
 }
-.collapsible-content {
-    display: none;
-    padding: 15px;
-    background: #f4f4f4;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+header .logo {
+    height: 50px;
+}
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+header nav ul li {
+    margin-left: 20px;
+}
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
 }
 
 /* Hero Section */
-.hero-banner {
+.hero {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    background: #f4f4f4;
+    padding: 50px;
 }
-.profile-photo {
+.hero .banner {
+    margin-top: 20px;
+    text-align: center;
+}
+.hero .banner img {
     max-width: 150px;
     border-radius: 50%;
-    margin-top: 20px;
+    margin-bottom: 10px;
 }
-.banner-text {
-    font-size: 1.5rem;
+.hero-content h1 span {
     color: #007BFF;
-    margin-top: 10px;
+}
+.hero-content .btn {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Collapsible Projects */
+.project-list details summary {
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 10px;
+    background: #f4f4f4;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.project-list details[open] summary {
+    background: #e0e0e0;
+}
+
+/* Skills Section */
+.skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.skills ul li {
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 
 /* Contact Icons */
 .contact-icons {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    font-size: 2rem;
+    gap: 20px;
 }
 .contact-icons a {
-    color: #007BFF;
+    font-size: 2rem;
+    color: #333;
     text-decoration: none;
 }
-.contact-icons a:hover {
-    color: #0056b3;
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
 }

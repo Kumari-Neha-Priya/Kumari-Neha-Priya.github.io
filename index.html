@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- Header -->
     <header>
         <div class="container">
             <img src="logo.png" alt="Your Logo" class="logo">
@@ -17,7 +18,7 @@
                     <li><a href="#hero">Home</a></li>
                     <li><a href="#about">About Me</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -27,71 +28,68 @@
     <!-- Hero Section -->
     <section class="hero" id="hero">
         <div class="hero-content">
-            <h1>Welcome! I'm <span>Your Name</span></h1>
-            <p>A passionate developer creating unique and engaging experiences.</p>
-            <a href="#about" class="btn">Learn More About Me</a>
+            <h1>Hello, I'm <span>Your Name</span></h1>
+            <p>Web Developer | Designer | Innovator</p>
+            <p><strong>Location:</strong> Your City, Your Country</p>
+            <a href="#about" class="btn">Learn More</a>
+            <a href="https://github.com/yourusername/resume.pdf" target="_blank" class="btn">View My Resume</a>
         </div>
-        <div class="hero-banner">
-            <img src="your-profile-photo.jpg" alt="Your Name" class="profile-photo">
-            <p class="banner-text">"Innovate. Create. Elevate."</p>
+        <div class="banner">
+            <img src="your-image.jpg" alt="Your Profile Photo" class="profile-photo">
+            <h2>"Creating Digital Experiences That Inspire"</h2>
         </div>
     </section>
 
-    <!-- About Me Section -->
+    <!-- About Section -->
     <section class="about" id="about">
         <h2>About Me</h2>
-        <p>Hello! I'm <b>Your Name</b>, based in <b>Your Current Location</b>. I specialize in web development, design, and building solutions that solve real-world problems.</p>
-        <p>Fun Fact: I started coding at the age of [X], and since then, it's been a wonderful journey of creativity and innovation!</p>
+        <p>Hello! I'm <b>Your Name</b>, a passionate web developer with a knack for solving problems and building creative solutions. I have worked on diverse projects that showcase my expertise in web development, design, and innovation.</p>
+        <p><em>Fun Fact:</em> I once coded for 24 hours straight to win a hackathon!</p>
     </section>
 
     <!-- Projects Section -->
     <section class="projects" id="projects">
-        <h2>My Work</h2>
-        <p>Click on the sections below to explore my projects.</p>
-        <div class="collapsible">
-            <button class="collapsible-button">Project 1</button>
-            <div class="collapsible-content">
-                <p><b>Title:</b> Project 1</p>
-                <p><b>Description:</b> An innovative project designed to [purpose].</p>
-                <a href="https://github.com/yourusername/project1" target="_blank">View Repository</a>
-            </div>
-            <button class="collapsible-button">Project 2</button>
-            <div class="collapsible-content">
-                <p><b>Title:</b> Project 2</p>
-                <p><b>Description:</b> A solution to [problem addressed].</p>
-                <a href="https://github.com/yourusername/project2" target="_blank">View Repository</a>
-            </div>
+        <h2>Projects</h2>
+        <div class="project-list">
+            <details>
+                <summary>Project 1</summary>
+                <p>Description of your first project.</p>
+                <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+            </details>
+            <details>
+                <summary>Project 2</summary>
+                <p>Description of your second project.</p>
+                <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
+            </details>
+            <!-- Add more collapsible projects here -->
         </div>
     </section>
 
-    <!-- Resume Section -->
-    <section class="resume" id="resume">
-        <h2>Resume</h2>
-        <p>Click below to view my detailed resume:</p>
-        <a href="https://github.com/yourusername/resume.pdf" target="_blank" class="btn">View Resume</a>
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2>Skills and Tools</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>React, Angular</li>
+            <li>Node.js, Express</li>
+            <li>Python, Django</li>
+            <li>Git, GitHub</li>
+        </ul>
     </section>
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
-        <h2>Get In Touch</h2>
+        <h2>Contact Me</h2>
         <div class="contact-icons">
-            <a href="mailto:yourname@example.com" title="Email">
-                <i class="fas fa-envelope"></i>
-            </a>
-            <a href="https://linkedin.com/in/yourprofile" title="LinkedIn">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/yourusername" title="GitHub">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="#location" title="Location">
-                <i class="fas fa-map-marker-alt"></i>
-            </a>
+            <a href="mailto:yourname@example.com" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/yourusername" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Your Name. All rights reserved.</p>
+        <p>&copy; 2025 Your Name. Built with passion and purpose.</p>
     </footer>
 
     <script src="script.js"></script>
