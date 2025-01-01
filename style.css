@@ -41,7 +41,7 @@ header nav ul li a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #f4f4f4;
+    background: #193866;
     padding: 50px;
 }
 .hero-content {
@@ -57,7 +57,7 @@ header nav ul li a {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background: #007BFF;
+    background: #b3c7dc;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
