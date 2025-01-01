@@ -100,21 +100,55 @@ header nav ul li a {
 }
 
 /* Contact Icons */
-.contact-icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-.contact-icons a {
-    font-size: 2rem;
-    color: #333;
-    text-decoration: none;
+.contact {
+    background: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
 }
 
-/* Footer */
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
+.contact h2 {
+    margin-bottom: 20px;
 }
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item i {
+    font-size: 2rem;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.contact-item a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+    color: #007BFF;
+}
+
+.contact-item span {
+    font-size: 1rem;
+    color: #555;
+}
+
