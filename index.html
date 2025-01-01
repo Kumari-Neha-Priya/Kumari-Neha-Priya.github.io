@@ -17,8 +17,10 @@
                 <ul>
                     <li><a href="#hero">Home</a></li>
                     <li><a href="#about">About Me</a></li>
+                    <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#skills">Skills</a></li>
+                    <li><a href="#blog">Blog</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -40,11 +42,30 @@
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About Me Section -->
     <section class="about" id="about">
         <h2>About Me</h2>
-        <p>Hello! I'm <b>Your Name</b>, a passionate web developer with a knack for solving problems and building creative solutions. I have worked on diverse projects that showcase my expertise in web development, design, and innovation.</p>
-        <p><em>Fun Fact:</em> I once coded for 24 hours straight to win a hackathon!</p>
+        <div class="about-content">
+            <p>Hi! I'm <b>Your Name</b>, a web developer passionate about building innovative solutions and creating user-centric experiences. I thrive in solving complex problems with clean and efficient code.</p>
+            <p><em>Fun Fact:</em> I once coded for 24 hours straight to win a hackathon!</p>
+        </div>
+    </section>
+
+    <!-- Professional Experience Section -->
+    <section class="experience" id="experience">
+        <h2>Professional Experience</h2>
+        <div class="experience-list">
+            <div class="experience-item">
+                <h3>Software Developer</h3>
+                <p>Company Name, 2020 - Present</p>
+                <p>Worked on building scalable applications, leading teams, and optimizing performance for various projects.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Front-End Developer Intern</h3>
+                <p>Company Name, 2019 - 2020</p>
+                <p>Developed interactive UI components and improved accessibility for client websites.</p>
+            </div>
+        </div>
     </section>
 
     <!-- Projects Section -->
@@ -53,28 +74,40 @@
         <div class="project-list">
             <details>
                 <summary>Project 1</summary>
-                <p>Description of your first project.</p>
+                <p>A web application for managing tasks efficiently.</p>
                 <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
             </details>
             <details>
                 <summary>Project 2</summary>
-                <p>Description of your second project.</p>
+                <p>A responsive e-commerce site with integrated payment gateway.</p>
                 <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
             </details>
-            <!-- Add more collapsible projects here -->
         </div>
     </section>
 
     <!-- Skills Section -->
     <section class="skills" id="skills">
         <h2>Skills and Tools</h2>
-        <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>React, Angular</li>
-            <li>Node.js, Express</li>
-            <li>Python, Django</li>
-            <li>Git, GitHub</li>
-        </ul>
+        <div class="skills-chart">
+            <div class="skill">
+                <label>HTML</label>
+                <div class="bar" style="width: 90%;"></div>
+            </div>
+            <div class="skill">
+                <label>CSS</label>
+                <div class="bar" style="width: 85%;"></div>
+            </div>
+            <div class="skill">
+                <label>JavaScript</label>
+                <div class="bar" style="width: 80%;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog" id="blog">
+        <h2>Blog</h2>
+        <p>Coming soon! Stay tuned for my thoughts on web development, technology, and more.</p>
     </section>
 
     <!-- Contact Section -->
@@ -104,7 +137,6 @@
             </div>
         </div>
     </section>
-    
 
     <!-- Footer -->
     <footer>
