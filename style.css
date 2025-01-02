@@ -144,6 +144,9 @@ p {
     .hero h1 span {
         font-size: 2.2rem; /* Adjust font size of second line for balance */
     }
+    .hero h2 {
+        font-size: 1.7rem; /* Slightly smaller font for mobile */
+    }
 }
 
 .hero .btn {
