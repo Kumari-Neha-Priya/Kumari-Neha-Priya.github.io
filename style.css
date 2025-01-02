@@ -125,7 +125,6 @@ p {
 }
 
 .hero h1 span {
-    display: block;
     font-size: 2.5rem; /* Matches parent font size */
     margin-bottom: 10px;
     color: rgb(206, 232, 250);
@@ -142,6 +141,7 @@ p {
     }
 
     .hero h1 span {
+        display: block;
         font-size: 2.2rem; /* Adjust font size of second line for balance */
     }
     .hero h2 {
