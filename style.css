@@ -99,7 +99,6 @@ p {
     }
 }
 
-
 /* Hero Section */
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-image.jpg') no-repeat center center/cover;
@@ -107,6 +106,7 @@ p {
     text-align: center;
     padding: 100px 20px;
     position: relative;
+    overflow: hidden;
 }
 
 .hero .profile-photo {
@@ -119,12 +119,15 @@ p {
 }
 
 .hero h1 {
-    font-size: 2.0rem;
+    font-size: clamp(1.8rem, 4vw, 2.5rem); /* Responsive font size */
+    white-space: nowrap; /* Prevents wrapping */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adds ellipsis if content overflows */
     margin-bottom: 10px;
 }
 
 .hero h1 span {
-    font-size: 2.5rem;
+    font-size: inherit; /* Matches parent font size */
     margin-bottom: 10px;
     color: rgb(206, 232, 250);
 }
