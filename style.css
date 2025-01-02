@@ -119,21 +119,31 @@ p {
 }
 
 .hero h1 {
-    font-size: clamp(1.5rem, 4vw, 2.0rem); /* Responsive font size */
-    white-space: nowrap; /* Prevents wrapping */
-    overflow: hidden;
-    text-overflow: ellipsis; /* Adds ellipsis if content overflows */
+    font-size: 2.5rem; /* Responsive font size */
     margin-bottom: 10px;
+    line-height: 1.2;
 }
 
 .hero h1 span {
-    font-size: inherit; /* Matches parent font size */
+    display: block;
+    font-size: 2.5rem; /* Matches parent font size */
     margin-bottom: 10px;
     color: rgb(206, 232, 250);
 }
 
 .hero p {
     font-size: 1.2rem;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem; /* Slightly smaller font for mobile */
+    }
+
+    .hero h1 span {
+        font-size: 2.2rem; /* Adjust font size of second line for balance */
+    }
 }
 
 .hero .btn {
