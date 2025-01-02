@@ -9,7 +9,7 @@ body {
 header {
     background: #04284d;
     color: white;
-    padding: 8px 20px;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,7 +30,7 @@ header nav ul {
 }
 
 header nav ul li {
-    margin: 0 8px;
+    margin: 0 10px;
 }
 
 header nav ul li a {
@@ -79,14 +79,14 @@ p {
 }
 
 .hero h1 {
-    font-size: 1.5rem;
+    font-size: 2.0rem;
     margin-bottom: 10px;
 }
 
 .hero h1 span {
     font-size: 2.5rem;
     margin-bottom: 10px;
-    color: rgb(191, 221, 242);
+    color: rgb(206, 232, 250);
 }
 
 .hero p {
