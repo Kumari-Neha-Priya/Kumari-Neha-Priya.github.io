@@ -18,8 +18,17 @@ header {
     z-index: 1000;
 }
 
-header .logo {
-    height: 50px;
+header .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+header .menu-toggle span {
+    background: white;
+    height: 3px;
+    width: 25px;
+    margin: 4px 0;
 }
 
 header nav ul {
@@ -27,11 +36,10 @@ header nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 10px;
 }
 
 header nav ul li {
-    margin: 0;
+    margin: 0 10px;
 }
 
 header nav ul li a {
@@ -45,55 +53,32 @@ header nav ul li a:hover {
     color: #FFD700;
 }
 
-/* Media queries for responsive design */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
+/* Mobile Menu Styles */
+@media screen and (max-width: 768px) {
+    header .menu-toggle {
+        display: flex;
     }
 
     header nav ul {
+        display: none;
         flex-direction: column;
-        display: none; /* Initially hidden for toggle menu */
-        width: 100%; /* Full width */
         background: #04284d;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+    }
+
+    header nav ul.active {
+        display: flex;
     }
 
     header nav ul li {
         margin: 10px 0;
-    }
-
-    /* Toggle button styles */
-    .menu-toggle {
-        display: block;
-        cursor: pointer;
-        font-size: 1.5rem;
-        color: white;
-        background: none;
-        border: none;
-    }
-
-    /* Show menu when active */
-    header nav ul.active {
-        display: flex;
+        text-align: center;
     }
 }
 
-section {
-    padding: 60px 20px;
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 2rem;
-    color: #04284d;
-}
-
-p {
-    text-align: center;
-    margin-bottom: 20px;
-}
 
 /* Hero Section */
 .hero {
