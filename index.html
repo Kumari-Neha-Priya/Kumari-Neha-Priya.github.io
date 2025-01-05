@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kumari Neha Priya - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 </head>
 <body>
     <!-- Header -->
@@ -18,258 +21,33 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" data-page="hero">Home</a></li>
+                    <li><a href="#" data-page="about">About</a></li>
+                    <li><a href="#" data-page="journey">Journey</a></li>
+                    <li><a href="#" data-page="experience">Experience</a></li>
+                    <li><a href="#" data-page="projects">Projects</a></li>
+                    <li><a href="#" data-page="hobbies">Hobbies & Interests</a></li>
+                    <li><a href="#" data-page="values">Values & Beliefs</a></li>
+                    <li><a href="#" data-page="gallery">Gallery</a></li>
+                    <li><a href="#" data-page="contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <div class="hero-content">
-            <h1>Hello, I'm <span>Kumari Neha Priya</span></h1>
-            <p>Creative | Adaptive | Client-Centric</p>
-            <p>Master's student in Business Analytics at the University of Illinois Urbana-Champaign</p>
-            <p>📍Champaign, IL, US</p>
-            <a href="#about" class="btn">Learn More</a>
-            <a href="https://drive.google.com/file/d/1vgn-7CBWzgtg7z1RV-97J5tXuNus6NrD/view?usp=sharing" target="_blank" class="btn">View My Resume</a>
-        </div>
-        <div class="banner">
-            <img src="Portfolio.jpg" alt="Your Profile Photo" class="profile-photo">
-            <h2>"Merging Business Acumen with Technology Expertise to Drive Transformative Growth"</h2>
-        </div>
-    </section>
-
-    <!-- About Me Section -->
-    <section class="about" id="about">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <p>I am a technology enthusiast with a passion for solving complex challenges and delivering impactful solutions. With over 4 years of experience spanning IT and the airline industries, I’ve honed my skills in project management, business analysis, and deploying SaaS and on-premises solutions. My work has empowered organizations to optimize their operations, achieve ambitious goals, and thrive in dynamic markets.</p> 
-            <p>Throughout my career, I’ve led 25+ successful projects and resolved 30+ critical issues for global airline clients, including Jet2.com, Peach Aviation, Transavia Airlines, and others. I bring a unique ability to bridge technical and business needs, ensuring every solution I deliver is both innovative and impactful. Whether it's implementing integrated systems for airline crew management or enhancing application performance by 84% via optimized business rules coding, my focus remains on driving measurable and high-quality results.</p>
-            <p>My professional journey began with a college placement at Infogain, where I secured the opportunity before even completing my final semester. At Infogain, I was deployed as a Business Analyst, outsourcing at its global clients such as Sabre and CAE. During this time, I developed expertise in Business Analysis and Project Management, delivering innovative aviation software solutions and providing consulting services. My work involved managing critical SaaS implementations for airlines, designing robust systems, and ensuring seamless project execution. Recognizing my impactful contributions to their business, CAE brought me on board as a full-time employee. These experiences offered invaluable global exposure, allowing me to collaborate with diverse teams and clients to address complex business challenges effectively.</p>
-            <p>During my undergraduate years, I interned at HighRadius, where I delved into AI-driven solutions and analytics, developing a strong foundation in problem-solving and strategic thinking. This experience reinforced my drive to explore innovative technologies and their real-world applications.</p>
-            <p>Currently, I am pursuing an M.S. in Business Analytics at the University of Iliinois Urbana-Champaign Gies College of Business, expanding my expertise in data-driven strategies, advanced analytics, and machine learning. My recent work includes an AI/ML project aimed at optimizing pharmaceutical manufacturing processes—an exciting challenge at the crossroads of technology and innovation.</p>
-            <p>Outside of work, I am passionate about traveling, immersing myself in new cultures, and building meaningful connections with people from all walks of life. Singing and music are a huge part of my life—they inspire and energize me, whether I’m performing or simply enjoying my favorite tunes. I also love painting and sketching, which serve as creative outlets that fuel my imagination. Additionally, I am committed to social service, organizing community initiatives and campaigns to create a positive impact.</p>
-            <p>Technology, to me, is not just a career—it's the bridge that empowers business transformation. Every project I undertake and every solution I develop combines the power of innovation with strategic business insight, aiming to drive impactful change and elevate organizational success.</p>
-        </br><em>Fun Fact:</em> I once coded for 5 days straight (with small breaks) to complete a project! and I can do contortion!</p>
-        </div>
-    </section>
-
-    <!-- Professional Experience Section -->
-    <section class="experience" id="experience">
-        <h2>Professional Experience</h2>
-        <div class="experience-list">
-            <div class="experience-item">
-                <h3>Data Scientist and Team Lead Intern</h3>
-                <p><i>US Pharmacopeia (USP), US, August 2024 - May 2025</i></p>
-                <p>As part of a groundbreaking AI/ML project for pharmaceutical continuous manufacturing, I built a system that automated the collection, filtering, and categorization of research data from 16 sources, including journals, documents, books, workshops, and others. Leading a cross-cultural team of five members, I implemented keyword-based filtering and fine-tuned embedding models like BioBERT, ensuring accurate, structured outputs for streamlined research accessibility and client satisfaction.</p>
-            </div>
-            <div class="experience-item">
-                <h3>Contributor Business Analyst</h3>
-                <p><i>CAE, India, March 2022 - November 2023</i></p>
-                <p>After CAE acquired Sabre's AirCentre, I transitioned to a full-time employee at CAE, where my responsibilities grew while continuing to work on similar aviation software and business rules projects. I led the development and implementation of tailored solutions, refining business processes, and ensuring on-time delivery to enhance client operations and satisfaction.</p>
-            </div>
-            <div class="experience-item">
-                <h3>Business Analyst</h3>
-                <p><i>Sabre Travel technologies Pvt. Ltd., India, January 2020 - February 2022</i></p>
-                <p>At Sabre, I specialized in delivering innovative aviation software and business rules solutions, focusing on streamlining crew management and optimizing operational workflows. My role involved collaborating with cross-functional teams and clients globally to ensure seamless implementation and alignment with client objectives.</p>
-            </div>
-            <div class="experience-item">
-                <h3>Consultant Development (Contracted to Sabre/CAE as Business Analyst)</h3>
-                <p><i>Infogain India Pvt. Ltd., India, January 2020 - September 2023</i></p>
-                <p>At Infogain, I worked as a Business Analyst and Project Manager, where I delivered critical SaaS solutions for global clients like Sabre and CAE. I specialized in managing complex aviation software and business rules projects, gathering requirements, developing and deploying solutions, and ensuring seamless project delivery to meet client needs.</p>
-            </div>
-            <div class="experience-item">
-                <h3>Advanced Robotics Process Automation Intern</h3>
-                <p><i>HighRadius, India, May 2019 - December 2019</i></p>
-                <p>At HighRadius, I first joined as a summer intern after clearing the Tech Track exam, where I built an AI-enabled FinTech B2B cloud application aimed at streamlining daily tasks for Accounts Receivable professionals. Following this, I was offered a paid internship, where I worked on a live project for a key client, implementing a Claims and POD (Proof of Delivery) Automation module. This solution optimized the claims aggregation process, empowering the client to make more informed decisions and significantly improve their deduction management efforts.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="projects" id="projects">
-        <h2>Projects</h2>
-        <div class="project-list">
-            <details>
-                <summary>Professional Projects</summary>
-            <details>
-                <summary>Project 1</summary>
-                <p><b>AI-ML Solution for Research Gathering on Pharmaceutical Continuous Manufacturing</b></p>
-                <p><i>Data Scientist and Team Lead Intern, US Pharmacopeia (USP), August 2024 - May 2025</i></p>
-                <a href="https://github.com/Kumari-Neha-Priya/AI-ML-Solution-for-Research-Gathering-on-Pharmaceutical-Continuous-Manufacturing" target="_blank">View on GitHub</a>
-            </details>
-            <details>
-                <summary>Project 2</summary>
-                <p><b>Claims and POD Automation Module</b></p>
-                <p><i>Advanced Robotics Process Automation Intern, HighRadius, July 2019 - December 2019</i></p>
-                <p>Description:</p>
-                </br>Developed an advanced Robotic Process Automation (RPA) module to streamline claims and Proof of Delivery (POD) processing for deduction management systems in B2B scenarios. The solution automated the retrieval, collation, and indexing of claims and backup documentation (e.g., Bills of Lading, PODs) from web portals, emails, and EDI submissions, significantly improving efficiency and accuracy. Key technologies included Java, XML, SQL, and automation frameworks for web/email agents.
-                <p>Contributions:</p>
-                </br>•Designed and implemented web and email agents to automate the aggregation of claims and PODs, reducing the need for manual intervention in document retrieval and processing
-                </br>•Developed data parsing and collation logic to extract and format claims into item-level indices for seamless integration with deduction workflows
-                </br>•Conducted feasibility testing, bug fixes, and enhancement of agents to address changes in customer requirements, document formats, and portal configurations
-                </br>•Configured automated workflows for document matching and cloud storage, ensuring quick access and effective dispute resolution
-                <p>Outcome:</p>
-                </br>The project resulted in a 40% reduction in manual tasks, significantly lowering Days Deduction Outstanding (DDO) and Days Sales Outstanding (DSO). By automating claims and POD aggregation, the system provided end-to-end efficiency, enabling businesses to recover lost revenue and streamline deduction management processes.
-            </details>
-            <details>
-                <summary>Project 3</summary>
-                <p><b>AI-enabled FinTech B2B Cloud Application</b></p>
-                <p><i>Summer Intern, HighRadius, May 2019 - June 2019</i></p>
-                <p>Description:</p>
-                </br>Developed a web-based AI-enabled FinTech B2B cloud application to streamline the workflow of Accounts Receivable (AR) departments. The application allowed AR professionals to manage invoice data, perform advanced searches, and sort operations, and even predict payment dates using machine learning algorithms. Tools and technologies included a structured database, web-based UI, and AI/ML components for payment date predictions.
-                <p>Contributions:</p>
-                </br>•Designed and implemented functionality to display and manage invoice data, including the ability to edit, sort, and search invoices by key parameters such as due date and fiscal year
-                </br>•Loaded and processed large datasets into the database and built a user-friendly UI to interact with the data
-                </br>•Developed and integrated a machine learning model to predict invoice payment dates, enhancing efficiency and decision-making capabilities for AR professionals
-                <p>Outcome:</p>
-                </br>Delivered a robust and fully functional AR management system that reduced manual efforts and improved invoice tracking and prediction accuracy. The application provided business value by enabling users to handle large datasets seamlessly, predict payment behavior, and optimize their operations effectively.
-            </details>
-        </details>
-        <details>
-            <summary>Academic Projects</summary>
-            <details>
-                <summary>Project 1</summary>
-                <p><b>Predicting US Flight Delays and Cancellations Using Wolfram Mathematica</b></p>
-                <p>This project was undertaken as part of my master’s program at the University of Illinois Urbana-Champaign, focusing on Big Data Analytics.</p>
-                <a href="https://github.com/Kumari-Neha-Priya/Predicting-US-Flight-Delays-and-Cancellations-Using-Wolfram-Mathematica" target="_blank">View on GitHub</a>
-            </details>
-            <details>
-                <summary>Project 2</summary>
-                <p><b>Analyzing and Forecasting Air Quality in Illinois and Ohio (2009-2023)</b></p>
-                <p>This project was undertaken as part of my master’s program at the University of Illinois Urbana-Champaign, focusing on Big Data Analytics.</p>
-                <a href="https://github.com/Kumari-Neha-Priya/Analyzing-and-Forecasting-Air-Quality-in-Illinois-and-Ohio-2009-2023-" target="_blank">View on GitHub</a>
-            </details>
-            <details>
-                <summary>Project 3</summary>
-                <p><b>Yelp Data Analysis for Strategic Restaurant Location Selection Using Knime and MongoDB</b></p>
-                <p>This project was undertaken as part of my master’s program at the University of Illinois Urbana-Champaign, focusing on Big Data Analytics.</p>
-                <a href="https://github.com/Kumari-Neha-Priya/Yelp-Data-Analysis-for-Strategic-Restaurant-Location-Selection-Using-Knime-and-MongoDB" target="_blank">View on GitHub</a>
-            </details>
-            <details>
-                <summary>Project 4</summary>
-                <p><b>Telling a story about Memes with blockchain data</b></p>
-                <p>This project was undertaken as part of my master’s program at the University of Illinois Urbana-Champaign, focusing on Big Data Analytics.</p>
-                <a href="https://github.com/Kumari-Neha-Priya/Telling-a-story-about-Memes-with-blockchain-data" target="_blank">View on GitHub</a>
-            </details>
-            <details>
-                <summary>Project 5</summary>
-                <p><b>Transforming Yelp Data from Semi-Structured to Structured Format for Business Insights</b></p>
-                <p>This project was undertaken as part of my master’s program at the University of Illinois Urbana-Champaign, focusing on leveraging semi-structured Yelp JSON data to provide actionable insights for business planning.</p>
-                <a href="https://github.com/Kumari-Neha-Priya/Transforming-Yelp-Data-from-Semi-Structured-to-Structured-Format-for-Business-Insights" target="_blank">View on GitHub</a>
-            </details>
-            <details>
-                <summary>Project 6</summary>
-                <p><b>Exploring Yelp Fusion API with GraphQL</b></p>
-                <p>This project was undertaken as part of my master’s program at the University of Illinois Urbana-Champaign, focusing on Business Analytics.</p>
-                <p>In this project, I leveraged the Yelp Fusion API, transitioning from traditional JSON-based querying to a modern GraphQL approach, to extract, analyze, and visualize business data for enhanced decision-making. The project aimed to replicate and expand on SQL-based analyses I previously developed, showcasing the advantages of GraphQL for real-world applications.</p>
-                <p>The scope involved querying data about businesses, reviews, and users, focusing on uncovering insights into customer behavior, review patterns, and top-performing businesses across specific categories and locations. By implementing GraphQL, I was able to enhance data precision and optimize query performance, effectively overcoming limitations of traditional APIs.</p>
-                <p>Key accomplishments include:</p>
-                </br>•Translated complex SQL queries into streamlined GraphQL queries, reducing query time and resource usage
-                </br>•Conducted an in-depth analysis of business performance, customer reviews, and user behavior trends
-                </br>•Created a dynamic and reusable querying framework for extracting insights with flexibility and efficiency
-                </br>•Delivered actionable insights that could help businesses understand customer preferences and refine strategies
-                </br>•Gained hands-on experience with modern data querying techniques and their application in business analytics
-            </details>
-            <details>
-                <summary>Project 7</summary>
-                <p><b>Property Market Value Evaluation for the Cook County Assessor’s Office (CCAO)</b></p>
-                <p>As part of my Master’s program at the University of Illinois Urbana-Champaign, I completed a project focused on enhancing the accuracy and fairness of property tax assessments for the Cook County Assessor’s Office (CCAO).</p>
-                <p>The project involved developing a data-driven predictive model to estimate residential property market values with minimal Mean Squared Error (MSE), supporting CCAO’s mission to address historical inaccuracies and public dissatisfaction. Leveraging historical data, I applied advanced regression techniques to ensure transparency, accuracy, and interpretability.                </p>
-                <p>This project underscored the importance of balancing accuracy and interpretability in predictive modeling while addressing real-world challenges in public policy and taxation.</p>
-                <p>Key accomplishments include:</p>
-                </br>•Evaluated four regression methodologies, including Linear Regression, Lasso Regression, k-Fold Cross-Validation, and Validation Set Approaches
-                </br>•Delivered a final predictive model (Multiple Linear Regression with Validation Set Approach) using 5 key predictors, achieving an R-Squared accuracy of 94.59% with an MSE of 3111.19
-                </br>•Prioritized model completeness and interpretability, ensuring no missing values in the final prediction output
-                </br>•Scaled and prepared prediction results for implementation, covering a range of property values from $161,000 (1st Quartile) to $660,100 (3rd Quartile)
-                </br>•Produced actionable insights for stakeholders, ensuring fair and data-driven property assessments
-            </details>
-            <details>
-                <summary>Project 8</summary>
-                <p><b>Illinois Workplace Wellness Study Analysis</b></p>
-                <p>This project was undertaken as part of my master’s program at the University of Illinois Urbana-Champaign, focusing on Business Analytics.</p>
-                <p>The Illinois Workplace Wellness Study used a randomized controlled trial to evaluate the effectiveness of workplace wellness programs on employee health, healthcare costs, and productivity. The study involved 4,834 employees, with 3,300 in the treatment group and 1,534 in the control group. My work focused on analyzing the program’s outcomes, identifying potential causal relationships, and examining the influence of demographic factors and selection bias on the results.</p>
-                <p>The findings revealed no statistically significant health improvements, cost savings, or productivity gains, with behavioral changes limited to healthier, more engaged employees. This suggests that wellness programs may not effectively reach less healthy employees or benefit all participants equally.</p>
-                <p>This project provided valuable experience in evaluating large-scale experimental data, understanding the nuances of randomized trials, and translating statistical findings into actionable business recommendations. It also emphasized the importance of inclusivity and tailored approaches in designing workplace wellness initiatives.</p>
-                <p>Key accomplishments include:</p>
-                </br>•Conducted hypothesis testing and statistical analysis using linear regression to evaluate program effectiveness
-                </br>•Analyzed the impact of randomization and demographic controls on outcome measures, such as healthcare spending, office visits, and chronic conditions
-                </br>•Identified selection bias and its influence on program outcomes, highlighting areas for targeted interventions
-                </br>Delivered actionable recommendations for employers to refine wellness programs and improve inclusivity
-            </details>
-            <details>
-                <summary>Project 9</summary>
-                <p><b>Teenage Driving and Mortality Analysis</b></p>
-                <p>This project was undertaken as part of my master’s program at the University of Illinois Urbana-Champaign, focusing on Big Data Analytics.</p>
-                <p>In this project, I analyzed the impact of driving eligibility on teenage mortality using a Regression Discontinuity (RD) research design. Leveraging death certificate data (1983–2014) and state-specific Minimum Legal Driving Age (MLDA) laws, I examined the causal relationship between gaining driving eligibility and changes in mortality rates. The analysis applied both non-parametric and parametric RD methods to assess differences in all-cause and motor vehicle accident mortality rates among teenagers just above and below the MLDA threshold.</p>
-                <p>Key accomplishments include:</p>
-                </br>•Conducted detailed data analysis on 501,193 teenage deaths over 31 years, identifying patterns in mortality rates relative to MLDA thresholds
-                </br>•Implemented non-parametric and parametric RD approaches, analyzing how bandwidth selection affects bias, precision, and causal validity
-                </br>•Demonstrated the trade-offs between statistical precision and bias when narrowing bandwidths around the MLDA cutoff
-                </br>•Delivered actionable insights for policymakers on the implications of driving eligibility laws on teenage mortality
-                </br>•Effectively communicated findings through well-structured reports and visualizations, ensuring clarity for diverse stakeholders
-            </details>
-            <details>
-                <summary>Project 10</summary>
-                <p><b>Wearable Air Pollution and Heart Rate Monitoring Device</b></p>
-                <p>This project was undertaken as part of my bachelor’s program at the Kalinga Institute of Industrial Technology</p>
-                <a href="https://www.youtube.com/watch?v=SYaxzheYONQ" target="_blank">View on YouTube</a>
-            </details>
-        </details>
-        <details>
-            <summary>Personal Projects</summary>
-            <details>
-                <summary>Project 1</summary>
-                <p><b>Business Analytics Capstone: Ad Blocker - a menace or a new industry evolution</b></p>
-                <a href="https://github.com/Kumari-Neha-Priya/Business-Analytics-Capstone-Ad-Blocker---a-menace-or-a-new-industry-evolution" target="_blank">View on GitHub</a>
-            </details>
-        </details>
-        </div>
-    </section>
-
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <h2>Contact Me</h2>
-        <p>If you'd like to work with me, collaborate, or just say hi, feel free to get in touch!</p>
-        <div class="contact-info">
-            <div class="contact-item">
-                <i class="fas fa-phone"></i>
-                <a href="tel:+1-217-979-6997"><img src="phone.jpg" alt="" id="logo"></a>
-            </div>
-            <div class="contact-item">
-                <i class="fas fa-envelope"></i>
-                <a href="mailto:kumari4@illinois.edu"><img src="outlook.jpeg" alt="" id="logo"></a>
-            </div>
-            <div class="contact-item">
-                <i class="fas fa-envelope"></i>
-                <a href="mailto:kumarinehapriya024@gmail.com"><img src="email.jpg" alt="" id="logo"></a>
-            </div>
-            <div class="contact-item">
-                <i class="fab fa-linkedin"></i>
-                <a href="https://www.linkedin.com/in/kumari-neha-priya/" target="_blank"><img src="linkedin1.jpg" alt="" id="logo"></a>
-            </div>
-            <div class="contact-item">
-                <i class="fab fa-github"></i>
-                <a href="https://github.com/Kumari-Neha-Priya" target="_blank"><img src="github9775.jpg" alt="" id="logo"></a>
-            </div>
-            <div class="contact-item">
-                <i class="fas fa-link"></i>
-                <a href="https://www.datacamp.com/portfolio/KumariNehaPriya" target="_blank"><img src="datacamp1.jpg" alt="" id="logo"></a>
-            </div>
-        </div>
-    </section>
-
+    
+    <main id="content">
+        <!-- Content will be dynamically loaded here -->
+    </main>
+    
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 Kumari Neha Priya. Built with passion and purpose.</p>
     </footer>
 
     <script src="script.js"></script>
+   
+
 </body>
 </html>
+
+  

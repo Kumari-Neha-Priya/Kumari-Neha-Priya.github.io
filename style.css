@@ -58,7 +58,7 @@ header nav ul li a:hover {
 }
 
 section {
-    padding: 40px 20px;
+    padding: 0.5vh 5vw;
 }
 
 h2 {
@@ -71,6 +71,13 @@ h2 {
 p {
     text-align: center;
     margin-bottom: 20px;
+}
+
+#photo {
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+
 }
 
 /* Mobile Menu Styles */
@@ -104,9 +111,13 @@ p {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-image.jpg') no-repeat center center/cover;
     color: white;
     text-align: center;
-    padding: 80px 20px;
+    padding: 2vh 5vw; /* Adjust padding based on viewport height and width */
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero .profile-photo {
@@ -183,9 +194,34 @@ p {
     font-size: 1.1rem;
 }
 
+.about .profile-photo {
+    border-radius: 50%;
+    margin-top: 20px;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border: 5px solid white;
+}
+
+/* Journey Section */
+.journey {
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.journey .profile-photo {
+    border-radius: 50%;
+    margin-top: 20px;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border: 5px solid white;
+}
+
 /* Experience Section */
 .experience {
     text-align: center;
+    background: #f9f9f9;
 }
 
 .experience-list {
@@ -197,9 +233,30 @@ p {
     margin-bottom: 20px;
 }
 
+.experience .profile-photo {
+    border-radius: 50%;
+    margin-top: 20px;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border: 5px solid white;
+}
+
+/* Styling for the world map container */
+#collaboration-map {
+    margin-top: 40px;
+    margin-bottom: 0px;
+
+}
+
+#world-collaboration-map {
+    width: 100%;
+    height: 500px; /* Adjust height as needed */
+}
+
 /* Projects Section */
 .projects {
-    background: #f4f4f4;
+    background: #f9f9f9;
 }
 
 .project-list details {
@@ -218,6 +275,262 @@ p {
     cursor: pointer;
 }
 
+.project-list details summary:hover {
+    transform: translateY(2px);
+}
+
+.banner {
+    text-align: center;
+}
+
+.projects .profile-photo {
+    border-radius: 50%;
+    margin-top: 20px;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border: 5px solid white;
+}
+
+.hobbies .profile-photo {
+    border-radius: 50%;
+    margin-top: 20px;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border: 5px solid white;
+}
+
+.hobbies {
+    background: #f9f9f9;
+}
+
+/* Hobbies Section */
+.hobbies-section {
+    background: #f7f8fc;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.hobbies-section h1 {
+    font-size: 2.5rem;
+    color: #04284d;
+    margin-bottom: 10px;
+}
+
+.hobbies-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.hobby-item {
+    background: white;
+    border-radius: 50px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 300px;
+}
+
+.hobby-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hobby-item .icon-container {
+    background: #afcff2;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hobby-item .icon-container i {
+    font-size: 2rem;
+    color: #04284d;
+}
+
+.hobby-item h3 {
+    font-size: 1.5rem;
+    color: #04284d;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.hobby-item p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+}
+
+
+/* About Section */
+.values {
+    background: #f9f9f9;
+}
+
+.values h1 {
+    text-align: center;
+}
+
+.values .profile-photo {
+    border-radius: 50%;
+    margin-top: 20px;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border: 5px solid white;
+}
+
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.value-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.value-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.value-item i {
+    font-size: 2.5rem;
+    color: #4c81ba;
+    margin-bottom: 15px;
+}
+
+.value-item h3 {
+    font-size: 1.5rem;
+    color: #04284d;
+    margin-bottom: 10px;
+}
+
+.value-item p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .value-item i {
+        font-size: 2rem;
+    }
+    .value-item h3 {
+        font-size: 1.2rem;
+    }
+    .value-item p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Gallery Section */
+
+.gallery {
+    background: #f9f9f9;
+}
+
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .gallery-category {
+    text-align: center;
+  }
+
+  .gallery .profile-photo {
+    border-radius: 50%;
+    margin-top: 20px;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border: 5px solid white;
+}
+  
+  .image-slider {
+    position: relative;
+  width: 100%;
+  max-width: 800px; /* Optional: you can set a max-width for the slider */
+  max-height: 1000px;
+  overflow: hidden;
+  margin: 0 auto;
+  }
+  
+  .slider-images {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .slide {
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+  
+  .slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 30px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .prev-btn {
+    left: 10px;
+  }
+  
+  .next-btn {
+    right: 10px;
+  }
+  
+  .slider-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  
+  /* Interactive Map */
+  #map-section {
+    margin-top: 40px;
+  }
+  
+  #map-section #world-map {
+    width: 100%;
+    height: 500px;
+  }
+  
+
 /* Contact Section */
 .contact {
     background: #f9f9f9;
@@ -231,16 +544,88 @@ p {
     align-items: center;
 }
 
-.contact-item {
+.contact-item1 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.contact-item i {
+.contact-item2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-item3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-item4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-item5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-item6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-item1 i {
     font-size: 2rem;
-    color: #4A90E2;
+    color: #0554ae;
     margin-bottom: 10px;
+}
+
+.contact-item2 i {
+    font-size: 2rem;
+    color: #0078d4;
+    margin-bottom: 10px;
+}
+
+.contact-item3 i {
+    font-size: 2rem;
+    color: #0e0f0f;
+    margin-bottom: 10px;
+}
+
+.contact-item4 i {
+    font-size: 2rem;
+    color: #0a66c2;
+    margin-bottom: 10px;
+}
+
+.contact-item5 i {
+    font-size: 2rem;
+    color: #080808;
+    margin-bottom: 10px;
+}
+
+.contact-item6 i {
+    font-size: 2rem;
+    color: #03EF62;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-info {
+        gap: 8px;
+    }
+}
+
+.no-underline {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Optional: Retain the text color */
 }
 
 #logo {
@@ -263,6 +648,15 @@ p {
 
 .contact-item a:hover {
     opacity: 0.8;
+}
+
+.contact .profile-photo {
+    border-radius: 50%;
+    margin-top: 20px;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border: 5px solid white;
 }
 
 /* Footer */
