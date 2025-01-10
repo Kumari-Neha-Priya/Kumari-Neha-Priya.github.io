@@ -433,10 +433,7 @@ const pages = {
         <h2>Contact Me</h2>
         <p>If you'd like to work with me, collaborate, or just say hi, feel free to get in touch!</p>
         <div class="contact-info">
-            <div class="contact-item1">
-                <i class="fas fa-phone"></i>
-                <a href="tel:+1-217-979-6997" class="no-underline">Phone</a>
-            </div>
+            
             <div class="contact-item2">
                 <i class="fas fa-inbox"></i>
                 <a href="mailto:kumari4@illinois.edu" class="no-underline">Outlook</a>
