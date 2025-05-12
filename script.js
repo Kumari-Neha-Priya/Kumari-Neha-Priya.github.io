@@ -219,6 +219,19 @@ const pages = {
             </details>
             <details>
                 <summary>Project 10</summary>
+                <p><b>Impact of Tinder Feature Rollouts on User Sentiment and Engagement</b></p>
+                <p>This project was undertaken as part of my master’s program at the University of Illinois Urbana-Champaign, focusing on Marketing Analytics.</p>
+                <a href="https://medium.com/@kumarinehapriya024/what-drives-user-sentiment-on-dating-apps-lessons-from-tinders-feature-rollouts-dac5239f3278" target="_blank">View on Medium</a>
+                <p>In this project, I analyzed how users respond to major feature launches on Tinder, focusing on changes in sentiment and engagement. Using over 150,000 app reviews across platforms, I investigated the causal impact of launching paid and utility-driven features using Difference-in-Differences (DiD), topic modeling, and predictive modeling techniques. The goal was to provide actionable insights on which features drive user happiness versus dissatisfaction, and how platform dynamics (iOS vs. Android) influence outcomes.</p>
+                <p>Key accomplishments include:</p>
+                </br>• Conducted comprehensive sentiment analysis on large-scale review data using VADER and validated it with rating-based labels for robust classification  
+                </br>• Applied causal DiD methods to quantify the effect of launching specific features (e.g., “Likes You,” “Passport”) on sentiment and engagement metrics  
+                </br>• Identified that “Likes You” significantly increases sentiment (+0.13), while monetized features like “Passport” lead to declines (~–0.09), informing feature strategy  
+                </br>• Built and evaluated an XGBoost classifier (AUC = 0.73) to predict negative reviews in real time for proactive product feedback monitoring  
+                </br>• Visualized post-launch engagement and sentiment shifts using clean, compelling plots, and communicated findings clearly to support marketing and product decisions
+            </details>
+            <details>
+                <summary>Project 11</summary>
                 <p><b>Wearable Air Pollution and Heart Rate Monitoring Device</b></p>
                 <p>This project was undertaken as part of my bachelor’s program at the Kalinga Institute of Industrial Technology</p>
                 <a href="https://www.youtube.com/watch?v=SYaxzheYONQ" target="_blank">View on YouTube</a>
